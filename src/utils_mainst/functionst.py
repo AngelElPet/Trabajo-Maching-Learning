@@ -20,17 +20,19 @@ def pagina_principal():
     #añadir una imagen: img = Image.open(src/data/nombre_imagen.jpg)// st.image(img, use_column_width='auto')
 
     with st.expander('Sesiones'):
-        if st.checkbox('Sesión 1', value = True):
-            st.markdown('explicacion e imagen sobre la primera sesion')
+        if st.checkbox('Sesión 1: Supuesto control de la red', value = True):
+            st.markdown('Esta sesión persigue generar una toma de consciencia sobre la perdida de control y la desconexión que genera el \
+                        uso reiterado de las redes')
         
-        if st.checkbox('Sesión 2', value = True):
-            st.markdown('explicación e imagen de la sesión segunda')
+        if st.checkbox('Sesión 2: ¿Conexión o desconexión?', value = True):
+            st.markdown('En esta sesión se trabaja los sintomas de incomodidad y malestar que pueden aperecer tanto a nivel físico como emocional\
+                        ante la ausencia de las TIC')
 
-        if st.checkbox('Sesión 3', value = True):
-            st.markdown('explicación e imagen de la sesión tercera')
+        if st.checkbox('Sesión 3: Riesgo de los juegos y apuestas online', value = True):
+            st.markdown('En la última sesión se toma conscienca del proceso de addición que genera el juego.')
     
     st.markdown('Finalmente se le pasa una encuesta a los estudiantes que tienen que rellenar, que es la siguiente')
-    #insertar o imagen de la encuesta o la encuesta en si misma
+    st.markdown('insertar o imagen de la encuesta o la encuesta en si misma')
 
 def mostrar_datos(df):
     st.markdown('Hasta la fecha un total de 2239 de estudiantes han rellenado la encuesta. Vamos a indagar en los datos para\
