@@ -4,7 +4,7 @@ import pandas as pd
 
 menu = st.sidebar.selectbox('Menu',('Pagina principal','Lectura de datos','Trabajo'))
 
-df = pd.read_csv('src\data\TIC.csv', sep = ';', encoding= 'latin-1')
+df = pd.read_csv('data\TIC.csv', sep = ';', encoding= 'latin-1')
 
 df = arreglar_datos(df)
 
