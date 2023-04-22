@@ -1,6 +1,6 @@
 # Trabajo Maching Learning
  
-##Introducción 
+## Introducción 
 
 A lo largo de esta memoria se va a tratar el tema de las TIC y veremos como es necesario que se de una buena educación a la población joven para que aprendan a realizar un buen uso de ellas. 
 Para ello, una psicóloga de Almería ha desarrollado 3 sesiones que han sido impartidas en diferentes centros de educación de la provincia desde 2019. En la última sesión les repartía una encuesta de satisfacción y dicha encuesta ha sido rellenada por 2239 individuos.
