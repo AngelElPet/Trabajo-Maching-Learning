@@ -1,6 +1,6 @@
 # Trabajo Maching Learning
  
-##Introducción 
+## Introducción 
 
 A lo largo de esta memoria se va a tratar el tema de las TIC y veremos como es necesario que se de una buena educación a la población joven para que aprendan a realizar un buen uso de ellas. 
 Para ello, una psicóloga de Almería ha desarrollado 3 sesiones que han sido impartidas en diferentes centros de educación de la provincia desde 2019. En la última sesión les repartía una encuesta de satisfacción y dicha encuesta ha sido rellenada por 2239 individuos.
@@ -17,3 +17,11 @@ La encuesta consta de 12 preguntas:
 10.	Grado de satisfacción de la tercera sesión (1 al 5)
 11.	Grado de satisfacción total (1 al 5)
 12.	¿Qué cambiarías o añadirías a las sesiones? (Pregunta abierta)
+
+## Objetivo
+
+Entrenar diferentes modelos para así lograr predecir el género, la edad y separar en dos grupos la población del proyecto
+
+## Resultado
+
+https://angelelpet-trabajo-maching-learning-srcmainst-xbm9u1.streamlit.app/
