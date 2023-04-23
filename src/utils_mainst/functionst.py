@@ -330,9 +330,9 @@ def clasificacion(df):
     x_train= x_train[x_train.Edad < 20]
     y_train = x_train.y
     del(x_train['y'])
-    with open('.\model\modelo_clasificacion_rf', 'rb') as archivo_entrada:
+    with open('src/model/modelo_clasificacion_rf', 'rb') as archivo_entrada:
         clasificador_rf = pickle.load(archivo_entrada)
-    with open('.\model\modelo_clasificacion_lg', 'rb') as archivo_entrada:
+    with open('src/model/modelo_clasificacion_lg', 'rb') as archivo_entrada:
         clasificador_lg = pickle.load(archivo_entrada)
     
     best_grids = pd.DataFrame( columns = ["Grid", "Score"])
@@ -374,13 +374,13 @@ def regresion (df):
     x_train= x_train[x_train.y < 20]
     y_train = x_train.y
     del(x_train['y'])
-    with open('.\model\modelo_clasificacion1_rf', 'rb') as archivo_entrada:
+    with open('src/model/modelo_clasificacion1_rf', 'rb') as archivo_entrada:
         clasificador1_rf = pickle.load(archivo_entrada)
-    with open('.\model\modelo_clasificacion1_lg', 'rb') as archivo_entrada:
+    with open('src/model/modelo_clasificacion1_lg', 'rb') as archivo_entrada:
         clasificador1_lg = pickle.load(archivo_entrada)
-    with open('.\model\modelo_regresion_lr', 'rb') as archivo_entrada:
+    with open('src/model/modelo_regresion_lr', 'rb') as archivo_entrada:
         regresor_lr = pickle.load(archivo_entrada)
-    with open('.\model\modelo_regresion_tree', 'rb') as archivo_entrada:
+    with open('src/model/modelo_regresion_tree', 'rb') as archivo_entrada:
         regresor_tree = pickle.load(archivo_entrada)
     
     prediction = regresor_tree.predict(x_test)
