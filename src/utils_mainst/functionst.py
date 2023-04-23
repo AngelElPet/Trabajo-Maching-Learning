@@ -234,15 +234,18 @@ def trabajo(df):
         
     
     with tab_reg:
-        st.markdown('hola')
+        t.subheader('REGRESOR')
+        st.markdown('En este apartado vamos a utilizar un modelo supervisado para clasificar la edad de la población que ha rellenado la encuesta.')
         regresion(df)
     
     with tab_clas:
         st.subheader('CLASIFICADOR')
-        st.markdown('En este apartado vamos a utilizar un modelo para clasificar el género de la población que ha rellenado la encuesta.')
+        st.markdown('En este apartado vamos a utilizar un modelo supervisado para clasificar el género de la población que ha rellenado la encuesta.')
         clasificacion(df)
         
     with tab_cluster:
+        t.subheader('AGRUPADOR')
+        st.markdown('En este apartado vamos a utilizar un modelo no supervisado para separar en dos la población que ha rellenado la encuesta.')
         kmeans(df)
 
 
