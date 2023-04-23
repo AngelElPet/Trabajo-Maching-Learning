@@ -234,7 +234,7 @@ def trabajo(df):
         
     
     with tab_reg:
-        t.subheader('REGRESOR')
+        st.subheader('REGRESOR')
         st.markdown('En este apartado vamos a utilizar un modelo supervisado para clasificar la edad de la población que ha rellenado la encuesta.')
         regresion(df)
     
@@ -244,7 +244,7 @@ def trabajo(df):
         clasificacion(df)
         
     with tab_cluster:
-        t.subheader('AGRUPADOR')
+        st.subheader('AGRUPADOR')
         st.markdown('En este apartado vamos a utilizar un modelo no supervisado para separar en dos la población que ha rellenado la encuesta.')
         kmeans(df)
 
