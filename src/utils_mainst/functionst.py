@@ -13,26 +13,50 @@ import pickle
 
 def pagina_principal():
     st.title('Estudio de adicción de las TIC')
+    i = Image.open("src/data/TIC.jpg")
+    st.image(i,use_column_width='Auto')
 
     st.subheader('Introducción')
-    st.markdown('Texto de introducción')
+    st.markdown('A lo largo de esta memoria se va a tratar el tema de las TIC y veremos como\
+                 es necesario que se de una buena educación a la población joven para que aprendan a realizar un buen uso de ellas.\
+                Para ello, una psicóloga de Almería ha desarrollado 3 sesiones que han sido impartidas en diferentes centros de educación\
+                 de la provincia desde 2019. En la última sesión les repartía una encuesta de satisfacción y \
+                dicha encuesta ha sido rellenada por 2239 individuos.')
 
-    #añadir una imagen: img = Image.open(src/data/nombre_imagen.jpg)// st.image(img, use_column_width='auto')
+    
 
     with st.expander('Sesiones'):
-        if st.checkbox('Sesión 1: Supuesto control de la red', value = True):
+        if st.checkbox('Sesión 1: Supuesto control de la red', value = True): 
             st.markdown('Esta sesión persigue generar una toma de consciencia sobre la perdida de control y la desconexión que genera el \
                         uso reiterado de las redes')
+            i = Image.open("src/data/control.jpg")
+            st.image(i,use_column_width='Auto')
         
         if st.checkbox('Sesión 2: ¿Conexión o desconexión?', value = True):
             st.markdown('En esta sesión se trabaja los sintomas de incomodidad y malestar que pueden aperecer tanto a nivel físico como emocional\
                         ante la ausencia de las TIC')
+            i = Image.open("src/data/conexion.jpg")
+            st.image(i,use_column_width='Auto')
 
         if st.checkbox('Sesión 3: Riesgo de los juegos y apuestas online', value = True):
             st.markdown('En la última sesión se toma conscienca del proceso de addición que genera el juego.')
+            i = Image.open("src/data/apuestas.jpg")
+            st.image(i,use_column_width='Auto')
     
     st.markdown('Finalmente se le pasa una encuesta a los estudiantes que tienen que rellenar, que es la siguiente')
-    st.markdown('insertar o imagen de la encuesta o la encuesta en si misma')
+    st.markdown('1.	Género (Femenino, Masculino)')
+    st.markdown('2.	Edad')
+    st.markdown('3.	En conjunto, ¿cómo valora lo desarrollado a lo largo de las tres sesiones realizadas sobre TIC? (1 al 5)')
+    st.markdown('4.	Valore el interés que han tenido los temas tratados (1 al 5)')
+    st.markdown('5.	¿Le han gustado las exposiciones realizadas por el/la formador/a? (1 al 5)')
+    st.markdown('6.	¿Aconsejaría esta actividad? (1 al 5)')
+    st.markdown('7.	¿Considera que los contenidos de esta actividad le serán útiles para su vida? (1 al 5)')
+    st.markdown('8.	Grado de satisfacción de la primera sesión (1 al 5)')
+    st.markdown('9.	Grado de satisfacción de la segunda sesión (1 al 5)')
+    st.markdown('10.	Grado de satisfacción de la tercera sesión (1 al 5)')
+    st.markdown('11.	Grado de satisfacción total (1 al 5)')
+    st.markdown('12.	¿Qué cambiarías o añadirías a las sesiones? (Pregunta abierta)')
+            
 
 def mostrar_datos(df):
     st.markdown('Hasta la fecha un total de 2239 de estudiantes han rellenado la encuesta. Vamos a indagar en los datos para\
